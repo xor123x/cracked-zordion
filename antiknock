@@ -1,0 +1,1 @@
+local a=game:GetService"Players".LocalPlayer;function AntiKO()local b,c=a.Character:WaitForChild"BodyEffects",a.Character:WaitForChild"RagdollConstraints"local d,e=b:FindFirstChild"K.O",b:FindFirstChild"Dead"if d and e and c then c:Destroy()d:Destroy()e:Destroy()end end;AntiKO()a.CharacterAdded:Connect(function()wait(1)AntiKO()end)
