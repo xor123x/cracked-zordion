@@ -1,0 +1,1 @@
+local a=game:GetService"Players".LocalPlayer;function Godmode()local b=a.Character:FindFirstChild"BodyEffects".Attacking;if b then b:Destroy()end end;Godmode()a.CharacterAdded:Connect(function()wait(1)Godmode()end)
