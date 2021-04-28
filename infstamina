@@ -1,0 +1,1 @@
+local a=game:GetService"Players"local b=a.LocalPlayer;function InfiniteStamina()local c=b.Character:WaitForChild"BodyEffects"local d,e,f=c:WaitForChild"Defense",c:WaitForChild"Movement",c:WaitForChild"Reload"while wait()do f.Value=false;d.Value=9e9;for g,h in next,e:GetChildren()do if h then h:Destroy()end end end end;InfiniteStamina()
